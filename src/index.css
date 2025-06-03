@@ -25,3 +25,10 @@
 input{
     border: 1px solid black;
 }
+
+button{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 1px;
+    cursor: pointer;
+}

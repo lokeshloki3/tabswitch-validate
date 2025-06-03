@@ -12,6 +12,18 @@ const TabForm = () => {
     email: "",
   })
 
+  const handleNextClick = () => {
+    setActiveTab(activeTab + 1);
+  }
+
+  const handlePrevClick = () => {
+    setActiveTab(activeTab - 1);
+  }
+
+  const handleSubmitClick = () => {
+    console.log('data', data)
+  }
+
   return (
     <div>
       <div className='tabs'>
@@ -27,8 +39,15 @@ const TabForm = () => {
       </div>
 
       <div className='content'>
-        <SelectedComponent data={data} setData={setData}/>
+        <SelectedComponent data={data} setData={setData} />
       </div>
+
+      <div>
+        {activeTab > 0 && <button onClick={handlePrevClick}>Prev</button>}
+        {activeTab < tabs.length - 1 && <button onClick={handleNextClick}>Next</button>}
+        {activeTab === tabs.length - 1 && <button onClick={handleSubmitClick}>Submit</button>}
+      </div>
+
     </div>
   )
 }
