@@ -11,6 +11,8 @@ const TabForm = () => {
     age: "",
     email: "",
     interests: [],
+    language: "",
+    theme: "dark",
   })
 
   const handleNextClick = () => {
