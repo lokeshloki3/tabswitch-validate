@@ -10,6 +10,7 @@ const TabForm = () => {
     name: "",
     age: "",
     email: "",
+    interests: [],
   })
 
   const handleNextClick = () => {
