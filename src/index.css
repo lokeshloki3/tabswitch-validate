@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content{
+    border: 1px solid black;
+    padding: 10px;
+    height: 300px;
+}

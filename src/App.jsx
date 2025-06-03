@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import Document from "./components/Document";
+import React from "react";
+import TabForm from "./components/TabForm";
 
 function App() {
 
   return (
-    <div>
+    <div className="h-screen p-4">
+        <TabForm />
     </div>
   )
 }
