@@ -1,12 +1,11 @@
-# React + Vite
+Demo - https://lokeshloki3.github.io/tabswitch-validate/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Key Features
+Multi-Tab Structure: Implemented a tabbed UI with three distinct sections: Profile, Interest, and Settings.
+Field Validation:
+    - Age Field: Numeric values only.
+    - Email Field: Proper email format validation.
+UI Elements: Integrated Dropdowns, Radio Buttons, and Checkboxes for dynamic input.
+Mandatory Field Validation: Ensured all required fields were validated before moving to the next tab.
+Data Persistence: Preserved form data across tabs, allowing users to move between tabs without losing entered information.
+Submit Button: Form submission was only allowed after completing the final tab (Settings), ensuring all data was filled out and validated.
