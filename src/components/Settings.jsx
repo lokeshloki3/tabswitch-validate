@@ -5,10 +5,7 @@ const Settings = ({ data, setData, errors }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
+    setData((prevState) => ({ ...prevState, [name]: value, }));
     // setData((prevState) => ({
     //   ...prevState,
     //   theme: e.target.name,
@@ -23,7 +20,7 @@ const Settings = ({ data, setData, errors }) => {
           <option value="english">English</option>
           <option value="hindi">Hindi</option>
         </select>
-        {/* {errors.language && <span className="errors">{errors.language}</span>} */}
+        {errors.language && <span className="errors">{errors.language}</span>}
       </div>
 
       <div>

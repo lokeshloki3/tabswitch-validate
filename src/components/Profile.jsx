@@ -1,18 +1,16 @@
 import React from 'react'
 
-const Profile = ({ data, setData }) => {
+const Profile = ({ data, setData, errors }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    setData((prevData) => ({
-      ...prevData, [name]: value,
-    }))
+    setData((prevData) => ({ ...prevData, [name]: value, }))
   }
 
   return (
     <div>
-      <div className='fields'>
+      <div>
         {/* htmlFor is for ID */}
         <label htmlFor='name'>Name</label>
         <input
@@ -22,8 +20,9 @@ const Profile = ({ data, setData }) => {
           value={data.name}
           onChange={handleChange}
         />
+        {errors.name && <span className="errors">{errors.name}</span>}
       </div>
-      <div className='fields'>
+      <div>
         <label htmlFor='age'>Age</label>
         <input
           type='number'
@@ -32,8 +31,10 @@ const Profile = ({ data, setData }) => {
           value={data.age}
           onChange={handleChange}
         />
+        {errors.age && <span className="errors">{errors.age}</span>}
+
       </div>
-      <div className='fields'>
+      <div>
         <label htmlFor='email'>Email</label>
         <input
           type='text'
@@ -42,6 +43,7 @@ const Profile = ({ data, setData }) => {
           value={data.email}
           onChange={handleChange}
         />
+        {errors.email && <span className="errors">{errors.email}</span>}
       </div>
     </div>
   )

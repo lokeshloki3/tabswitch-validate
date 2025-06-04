@@ -42,7 +42,7 @@ export default function Interests({ data, setData, errors }) {
         />
         <label>Music</label>
       </div>
-      {/* {errors.interests && <span className="errors">{errors.interests}</span>} */}
+      {errors.interests && <span className="errors">{errors.interests}</span>}
     </div>
   );
 }

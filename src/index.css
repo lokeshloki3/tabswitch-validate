@@ -17,11 +17,6 @@
     width: 400px;
 }
 
-.fields {
-    display: flex;
-    gap: 10px;
-}
-
 input{
     border: 1px solid black;
 }
@@ -31,4 +26,14 @@ button{
     padding: 5px;
     margin: 1px;
     cursor: pointer;
+}
+
+.heading {
+  display: flex;
+}
+
+.errors {
+  color: red;
+  display: block;
+  font-size: small;
 }
