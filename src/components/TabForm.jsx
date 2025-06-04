@@ -96,6 +96,48 @@ const TabForm = () => {
     }
   }
 
+  // const handleSubmitClick = async () => {
+  //   if (tabs[activeTabIndex].validate()) {
+  //     try {
+  //       console.log("Data to be sent:", data);
+
+  //       const response = await fetch('https://dummyapi.com/submit', {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json',
+  //         },
+  //         body: JSON.stringify(data),
+  //       });
+
+  //       if (response.ok) {
+  //         const result = await response.json();
+  //         console.log("API response:", result);
+
+  //         setData({
+  //           name: "",
+  //           age: "",
+  //           email: "",
+  //           interests: [],
+  //           theme: "dark",
+  //           language: "",
+  //         });
+
+  //         setActiveTabIndex(0);
+
+  //         alert("Form submitted successfully!");
+  //       } else {
+  //         // Handle API error
+  //         console.error("Error submitting form:", response.statusText);
+  //         alert("There was an error submitting the form. Please try again.");
+  //       }
+  //     } catch (error) {
+  //       console.error("Error:", error);
+  //       alert("Network error. Please check your connection and try again.");
+  //     }
+  //   }
+  // }
+
+
   return (
     <div>
       <div className='tabs'>
