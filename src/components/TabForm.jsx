@@ -19,9 +19,11 @@ const TabForm = () => {
           err.age = "Age should be atleast 18";
         }
 
-        if (!data.email || data.email.length < 2) {
-          err.email = "Email is atleast 2 character long";
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email || !emailRegex.test(data.email)) {
+          err.email = "Please enter a valid email address";
         }
+
 
         setErrors(err);
         return err.name || err.email || err.age ? false : true;
